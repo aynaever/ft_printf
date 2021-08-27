@@ -6,7 +6,7 @@
 #    By: anaouadi <anaouadi@student.42wolfsbu       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/25 16:12:07 by anaouadi          #+#    #+#              #
-#    Updated: 2021/08/26 08:10:11 by anaouadi         ###   ########.fr        #
+#    Updated: 2021/08/27 11:59:47 by anaouadi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,10 +19,10 @@ CC = gcc
 
 all : $(NAME)
 
-$(NAME) : $(OBJS) ft_printf.h 
+$(NAME) : $(OBJS) 
 	ar -crs $(NAME) $(OBJS) 
 	
-$(OBJS) : $(SRCS)
+$(OBJS) : $(SRCS) ft_printf.h
 	$(CC) -c $(SRCS)
 
 clean :
